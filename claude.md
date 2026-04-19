@@ -74,7 +74,7 @@
 - **Scope:** Blog only — we do NOT sell, buy, or broker gadgets
 - **Category:** "Gadgets" only — no category switcher anywhere
 - **Footer:** © 2026 GlobalInfoNest
-- **Analytics:** Google Analytics `G-WQFMWPTPDS` — on EVERY HTML page
+- **Analytics:** Google Analytics `G-Q01Y2TTSC6` — on EVERY HTML page
 - **AdSense:** Ad slots hidden by default (`display: none`) until real ads are placed
 - **Accent color:** `#F97316` (orange)
 - **Fonts:** Inter (body) + Playfair Display (headings) via Google Fonts
