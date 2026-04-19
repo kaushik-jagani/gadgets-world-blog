@@ -1,14 +1,14 @@
 /**
  * router.js -- Page bootstrapper for blog-post.html
  * Reads ?slug= param, fetches data/posts/{slug}/post.json
- * Integrates Google Analytics (G-WQFMWPTPDS)
+ * Integrates Google Analytics (G-Q01Y2TTSC6)
  * ALL_SLUGS determines Trending Reads pool
  */
 
 (function () {
   'use strict';
 
-  var GA_ID      = 'G-WQFMWPTPDS';
+  var GA_ID      = 'G-Q01Y2TTSC6';
   var ALL_POSTS  = []; // loaded from /data/posts/index.json (flat array with listing meta)
 
   function loadIndex() {
