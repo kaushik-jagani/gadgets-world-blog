@@ -1,0 +1,20 @@
+{
+  "siteName": "Gadgets World",
+  "tagline": "Your Trusted Guide to Gadgets, Reviews & Tech Insights",
+  "logoText": "Gadgets World",
+  "nav": [
+    { "label": "Home", "href": "/index.html" },
+    { "label": "Gadgets", "href": "/pages/blog-list.html" }
+  ],
+  "social": {
+    "twitter": "https://twitter.com/GadgetsWorld",
+    "linkedin": "https://linkedin.com/company/GadgetsWorld"
+  },
+  "footer": {
+    "text": "&copy; 2026 GlobalInfoNest. All rights reserved. Your trusted gadgets guide.",
+    "links": [
+      { "label": "Contact Us", "href": "#" },
+      { "label": "Privacy Policy", "href": "#" }
+    ]
+  }
+}
