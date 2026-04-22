@@ -8,7 +8,7 @@
 (function () {
   'use strict';
 
-  var GA_ID      = ''; // G-Q01Y2TTSC6
+  var GA_ID      = 'G-DBPV8Y3PKE'; // G-Q01Y2TTSC6
   var ALL_POSTS  = []; // loaded from /data/posts/index.json (flat array with listing meta)
 
   function loadIndex() {
@@ -27,9 +27,9 @@
 
   /* -- GA helper ------------------------------------------ */
   function gaEvent(name, params) {
-    // if (typeof window.gtag === 'function') {
-    //   window.gtag('event', name, params || {});
-    // }
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', name, params || {});
+    }
   }
 
   /* -- Get slug from URL ---------------------------------- */
@@ -154,7 +154,7 @@
           copyBtn.title = 'Copied!';
           setTimeout(function () { copyBtn.title = 'Copy link'; }, 2000);
         });
-        // gaEvent('share', { method: 'copy', content_type: 'article', item_id: post.slug });
+        gaEvent('share', { method: 'copy', content_type: 'article', item_id: post.slug });
       });
     }
   }
@@ -239,11 +239,11 @@
       loadAlsoLike(slug);
 
       // GA page_view event
-      // gaEvent('page_view', {
-      //   page_title:    post.title,
-      //   page_location: window.location.href,
-      //   content_group: post.category || 'Blog'
-      // });
+      gaEvent('page_view', {
+        page_title:    post.title,
+        page_location: window.location.href,
+        content_group: post.category || 'Blog'
+      });
 
     }).catch(function (err) {
       console.error('Failed to load post:', err);
