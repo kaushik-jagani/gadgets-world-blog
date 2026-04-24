@@ -99,6 +99,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -107,8 +108,10 @@ body {
   line-height: var(--line-height-body);
   color: var(--color-text);
   background-color: var(--color-bg);
-  min-width: 360px;
   overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
   transition: background-color var(--t-base), color var(--t-base);
 }
 
@@ -162,6 +165,8 @@ button { cursor: pointer; font-family: var(--font-body); border: none; backgroun
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--sp-6);
+  width: 100%;
+  box-sizing: border-box;
 }
 @media (max-width: 768px) { .container { padding: 0 var(--sp-4); } }
 

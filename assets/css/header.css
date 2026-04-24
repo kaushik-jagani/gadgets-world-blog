@@ -21,6 +21,7 @@
   align-items: center;
   gap: var(--sp-5);
   height: 100%;
+  overflow: hidden;
 }
 
 /* Logo */
@@ -239,6 +240,10 @@
   .search-input { width: 200px; }
 }
 @media (max-width: 480px) {
-  .search-input-wrapper.open { width: 160px; }
-  .search-input { width: 160px; font-size: 13px; }
+  .search-input-wrapper.open { width: 150px; }
+  .search-input { width: 150px; font-size: 13px; }
+}
+@media (max-width: 360px) {
+  .search-input-wrapper.open { width: 120px; }
+  .search-input { width: 120px; font-size: 12px; }
 }
